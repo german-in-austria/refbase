@@ -9,6 +9,6 @@ RUN mkdir /src
 RUN tar -C /src -xzf refbase.tar
 
 # COPY config/php.ini /usr/local/etc/php/
-RUN mv /src/refbase-0.9.6/* /var/www/html/
+RUN cp /src/refbase-0.9.6/* /var/www/html/
 
 COPY ./initialize /var/www/html/initialize
